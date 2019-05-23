@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_meiguxianjinliu"
+        style="@style/Nianbao_or_Content_Right_f10"
+        android:paddingRight="10dp"
+        android:text="--"
+        android:textSize="12dp"  />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"/>
+    <TextView
+        android:id="@+id/tv_yingshouxianjin"
+        style="@style/Nianbao_or_Content_Right_f10"
+        android:paddingRight="10dp"
+        android:text="--"
+        android:textSize="12dp"  />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"/>
+    <TextView
+        android:id="@+id/tv_touzixianjin"
+        style="@style/Nianbao_or_Content_Right_f10"
+        android:paddingRight="10dp"
+        android:text="--"
+        android:textSize="12dp"  />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"/>
+    <TextView
+        android:id="@+id/tv_chouzixianjin"
+        style="@style/Nianbao_or_Content_Right_f10"
+        android:paddingRight="10dp"
+        android:text="--"
+        android:textSize="12dp"  />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hui"/>
+
+
+</LinearLayout>

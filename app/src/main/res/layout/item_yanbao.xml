@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/item_main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_news_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginTop="14dp"
+                android:maxLines="2"
+                android:padding="5dp"
+                tools:text="朴槿惠“亲信干政”事件：崔顺实主动接受传讯 口罩遮面沉默不语【组图】"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/tv_news_detail_author_name"
+                android:layout_width="29dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_detail_title"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/yanbao"
+                android:gravity="center"
+                android:text="研报"
+                android:textColor="@color/violet"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_detail_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_news_detail_author_name"
+                tools:text="2017.06.06"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

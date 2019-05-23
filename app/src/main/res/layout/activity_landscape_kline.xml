@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhiyi.chinaipo.ui.activity.stocks.LandscapeKLineActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<com.androidkun.xtablayout.XTabLayout-->
+            <!--android:id="@+id/X_xTablayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="250dp"-->
+            <!--app:xTabDividerWidthWidthText="true"-->
+            <!--app:xTabIndicatorColor="@color/colorPrimary"-->
+            <!--app:xTabIndicatorHeight="0dp"-->
+            <!--app:xTabMode="fixed"-->
+            <!--app:xTabSelectedTextColor="@color/blue"-->
+            <!--app:xTabSelectedTextSize="16dp"-->
+            <!--app:xTabTextColor="@color/black"-->
+            <!--app:xTabTextSize="15dp" />
+            -->
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab_k_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            app:tl_indicator_bounce_enable="false"
+            app:tl_indicator_color="@color/blue"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_width="25dp"
+            app:tl_textSelectColor="@color/blue"
+            app:tl_textUnselectColor="@color/black" />
+        <ImageView
+            android:id="@+id/img_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_off" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

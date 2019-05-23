@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_industry_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:text="软件技术服务" />
+
+        <TextView
+            android:id="@+id/tv_industry_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="right|center"
+            android:maxLines="1"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:text="1554663"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_slidably_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/Dguben"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_guben_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="324" />
+
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dzongzichuan"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_zongzichan_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+    </LinearLayout>
+    <!--营收-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_yingshou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dyingshou"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_yingshou_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+
+        <TextView
+            android:id="@+id/tv_yingshouzeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dyinghsoutongbi"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_yingshoutongbi_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+    </LinearLayout>
+
+    <!--净利润-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_jinglirun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Djinglirun"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_jinglirun_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+        <TextView
+            android:id="@+id/tv_jinglirunzeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Djingliruntongbi"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_jingliruntongbi_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+    </LinearLayout>
+
+    <!--负债-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_fuzhai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="负债:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_fuzhai_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+        <TextView
+            android:id="@+id/tv_fuzhailv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="负债率:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_fuzhailv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+    </LinearLayout>
+
+    <!--净资产-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_data_jingzichan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="净资产:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_jingzichan_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+        <TextView
+            android:id="@+id/tv_data_jingzichanlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="净资产收益率:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_jingzichanlv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+    </LinearLayout>
+    <!--现金流-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_xianjinliu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="现金流:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_xianjinliu_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+
+        <TextView
+            android:id="@+id/tv_meigushouyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="每股收益:"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_data_meigushouyi_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:textColor="@color/hui5"
+            android:textSize="11dp"
+            tools:text="84" />
+    </LinearLayout>
+</LinearLayout>

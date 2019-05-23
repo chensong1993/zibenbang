@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/loginlog"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/log_out"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_xian"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_tishi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/hui" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_xian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/loginlog"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/x_confirm"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/loginlog"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/x_cancel"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

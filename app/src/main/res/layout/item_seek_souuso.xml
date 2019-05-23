@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8f000000">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_xian1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/hui" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_xian1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_zixun"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/x_zixun"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/hui" />
+
+            <TextView
+                android:id="@+id/tv_hangqing"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/x_hangqing"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/hui" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/author"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_xian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_search"
+            android:background="@color/hui" />
+
+        <TextView
+            android:id="@+id/tv_quanbu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_xian"
+            android:gravity="center"
+            android:text="@string/x_search_quanbu"
+            android:textColor="@color/blue"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

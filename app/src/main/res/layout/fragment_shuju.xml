@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fillStatusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+    <!--顶部-->
+    <include layout="@layout/shujutop" />
+
+    <include
+        layout="@layout/item_loading"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="false"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.zhiyi.chinaipo.ui.widget.FingNestedScrollView
+            android:id="@+id/fn_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_data_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--数据中心-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_main_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--挂牌公司地区分布-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_gongsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_hangyefenbu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/x_gongsi_diqu_fenbu"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tv_hangyefenbu"
+                            android:background="@color/black" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_gongsi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@id/rl_gongsi"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_ffenbu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/x_gongsi_hangye_fenbu"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tv_ffenbu"
+                            android:background="@color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_hangyefenbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvdiqufenbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--挂牌公司-->
+                <include layout="@layout/item_head_time" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_guapai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--行业统计-->
+                <include layout="@layout/item_shuju_head_hangye" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_hangye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+
+                <!--新股挂牌-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_xinguHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_xinguguapai_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_xingu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--主办劵商-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_zhubanHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_zhubanquanshang" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_zhubanpaihang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--做市商排行-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_zuoshiHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_shuju_zuoshishang_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_zuoshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--律师事务所-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lvshiHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_shuju_lvshishiwusuo_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lvshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+                <!--会计事务排行-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_kuaijiHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/item_shuju_kuaijishiwusuo_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_kuaiji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/hui" />
+            </LinearLayout>
+        </com.zhiyi.chinaipo.ui.widget.FingNestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

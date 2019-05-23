@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/x_category"
+        android:textColor="@color/hui2"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_gongsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Zgongsimingcheng"
+        android:textColor="@color/hui2"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_jigou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/x_jigoutouzi"
+        android:textColor="@color/hui2"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_geren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/x_gerentouzi"
+        android:textColor="@color/hui2"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_quanshang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/x_quanshang"
+        android:textColor="@color/hui2"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_qita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/x_qita"
+        android:textColor="@color/hui2"
+        android:textSize="12dp" />
+</LinearLayout>

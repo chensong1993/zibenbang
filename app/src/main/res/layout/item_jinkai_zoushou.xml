@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bankuai"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/space"
+            android:layout_weight="2.2">
+
+            <TextView
+                android:id="@+id/tv_shuzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shuzi">
+
+                <TextView
+                    android:id="@+id/tv_baifenbi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_baifenbi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_baifenbi"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+           android:layout_marginRight="@dimen/space"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_stock_exchange_type"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/zhongxinlog"
+                android:gravity="center"
+                android:text="竞价"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_stock_type"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/zhongxinzi"
+                android:gravity="center"
+                android:text="创新层"
+                android:layout_weight="1"
+                android:textColor="@color/violet"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_focusing_on_stock"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/weiguanzhu"
+                android:gravity="center"
+                android:text="+关注"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui" />
+
+
+
+</LinearLayout>

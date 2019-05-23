@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_activity_head" />
+
+    <include layout="@layout/item_web_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hui6">
+
+        <ImageView
+            android:id="@+id/img_ipo"
+            android:layout_width="225dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_comment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_ipo"
+            android:gravity="center"
+            android:text="暂时没有人发表评论"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</LinearLayout>

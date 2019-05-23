@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <!--<include layout="@layout/item_home_news_details"/>-->
+    <include
+        android:id="@+id/in"
+        layout="@layout/item_activity_head" />
+
+    <include
+        layout="@layout/item_loading"
+        android:visibility="gone" />
+
+    <com.zhiyi.chinaipo.ui.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/web_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/web_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/web_content" />
+        </RelativeLayout>
+    </com.zhiyi.chinaipo.ui.widget.MyScrollView>
+
+    <WebView
+        android:id="@+id/web_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_xian"
+        android:layout_below="@id/in"
+        android:visibility="gone" />
+    <!-- <ProgressBar
+         android:id="@+id/progressBar2"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_marginTop="200dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal" />-->
+
+</RelativeLayout>

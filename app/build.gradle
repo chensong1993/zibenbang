@@ -1,0 +1,295 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply from: 'tinker-support.gradle'
+// 多渠道使用walle示例（注：多渠道使用）
+apply from: 'multiple-channel.gradle'
+
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        debug {
+        }
+        release {
+            def signingFile = file("../signing.properties")
+            if (signingFile.canRead()) {
+                Properties properties = new Properties()
+                properties.load(new FileInputStream(signingFile))
+
+                try {
+                    storeFile file(properties['STORE_FILE'])
+                    storePassword properties['STORE_PASSWORD']
+                    keyAlias properties['KEY_ALIAS']
+                    keyPassword properties['KEY_PASSWORD']
+
+                    println "RELEASE_BUILD: Signing..."
+                } catch (e) {
+                    throw new InvalidUserDataException("You should define STORE_FILE and STORE_PASSWORD and KEY_ALIAS and KEY_PASSWORD in signing.properties.")
+                }
+
+            } else {
+                println "RELEASE_BUILD: signing.properties not found"
+            }
+            keyAlias 'xsb'
+            keyPassword '2016xsb'
+            storeFile file('./keystore/xsb.keystore')
+            storePassword '2016xsb'
+
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.zhiyi.chinaipo"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        multiDexEnabled true
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        //bugly
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    greendao {
+        schemaVersion 1//数据库版本号
+        daoPackage 'com.zhiyi.chinaipo.models.greendao'//设置DaoMaster、DaoSession、Dao包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    }
+
+    productFlavors {
+
+    }
+}
+
+repositories {
+    maven { url "https://clojars.org/repo/" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // androidX
+
+    // annotationProcessor 'androidx.annotation:annotation:1.0.0'
+
+    // implementation rootProject.ext.dependencies["support-v4"]
+    implementation(rootProject.ext.dependencies["appcompat-v7"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    implementation(rootProject.ext.dependencies["cardview-v7"]) {
+        exclude module: 'support-annotations'
+    }
+    implementation(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        //  exclude module: 'support-v4'
+    }
+
+    //google颜色提取api
+    implementation 'com.android.support:palette-v7:27.1.1'
+
+    //tools
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    compileOnly rootProject.ext.dependencies["javax.annotation"]
+    implementation rootProject.ext.dependencies["progressmanager"]
+    implementation rootProject.ext.dependencies["retrofit-url-manager"]
+    implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
+    implementation rootProject.ext.dependencies["okhttp"]
+    implementation rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    compileOnly rootProject.ext.dependencies["javax.annotation"]
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["fragmentation-swipeback"]
+    testImplementation rootProject.ext.dependencies["junit"]
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+    implementation rootProject.ext.dependencies["rxlifecycle2"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-android"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-components"]
+    implementation rootProject.ext.dependencies["androideventbus"]
+    compileOnly 'frankiesardo:icepick-processor:3.2.0'
+    annotationProcessor 'frankiesardo:icepick-processor:3.2.0'
+
+    //eventbus
+    implementation(rootProject.ext.dependencies["rxpermissions2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'support-annotations'
+    }
+    implementation rootProject.ext.dependencies["rxbinding3"]
+    implementation rootProject.ext.dependencies["rxandroid2"]
+    implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["picasso"]
+    implementation rootProject.ext.dependencies["glide-transformations"]
+    implementation rootProject.ext.dependencies["glide-okhttp3-integration"]
+    implementation rootProject.ext.dependencies["photoview"]
+    implementation rootProject.ext.dependencies["dagger2"]
+    implementation rootProject.ext.dependencies["gson"]
+
+    // Log
+    implementation rootProject.ext.dependencies["timber"]
+    implementation rootProject.ext.dependencies["logg"]
+    implementation rootProject.ext.dependencies["material-calendarview"]
+    implementation rootProject.ext.dependencies["materialsearchview"]
+    implementation rootProject.ext.dependencies["multiline-collapsingtoolbar"]
+
+    //    implementation project(':refresh-layout')
+    implementation project(':stockchart')
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation rootProject.ext.dependencies["greendao"]
+
+    //canary
+    debugImplementation rootProject.ext.dependencies["blockcanary-android"]
+    releaseImplementation rootProject.ext.dependencies["blockcanary-no-op"]
+    debugImplementation rootProject.ext.dependencies["leakcanary-android"]
+    releaseImplementation rootProject.ext.dependencies["leakcanary-android-no-op"]
+
+    // implementation 'com.chanven.lib:cptr:1.1.0'
+
+    //ad
+    implementation rootProject.ext.dependencies["fresco"]
+
+    //轮播图
+    implementation rootProject.ext.dependencies["banner"]
+    implementation rootProject.ext.dependencies["x_tabLayout"]
+
+    //引导页
+    implementation rootProject.ext.dependencies["guide_helper"]
+
+    //替代sharedPreferences
+    implementation rootProject.ext.dependencies["mmkv"]
+
+    //recycleview置顶侧滑退出
+    implementation rootProject.ext.dependencies["recyclerview-swipe"]
+
+    //搜索弹窗
+    implementation rootProject.ext.dependencies["basepopup"]
+
+    //6.0以上动态添加权限
+    implementation rootProject.ext.dependencies["permission"]
+
+    //跑马灯
+    implementation rootProject.ext.dependencies["marquee"]
+
+    //地区滚筒选择
+    implementation rootProject.ext.dependencies["citypickerview"]
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["androidtagview"]
+    implementation rootProject.ext.dependencies["agentweb"]
+    implementation rootProject.ext.dependencies["agentweb-download"]
+
+    // (可选)
+    implementation rootProject.ext.dependencies["markdownview"]
+    implementation rootProject.ext.dependencies["jsbridge"]
+    implementation rootProject.ext.dependencies["smartrefreshlayout"]
+    implementation rootProject.ext.dependencies["tkrefreshlayout"]
+    implementation rootProject.ext.dependencies["bottomdialog"]
+
+    //implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.4.0'
+    implementation rootProject.ext.dependencies["smarttablayout-ibrary"]
+    implementation rootProject.ext.dependencies["smarttablayout-utils"]
+    implementation rootProject.ext.dependencies["smartadapters-library"]
+    implementation rootProject.ext.dependencies["retroauth"]
+
+    /*implementation rootProject.ext.dependencies["deeplinkdispatch"]
+            implementation rootProject.ext.dependencies["deeplinkdispatch-processor"]
+            implementation 'com.airbnb:deeplinkdispatch:1.4.0'
+            implementation 'com.airbnb:deeplinkdispatch-processor:1.4.0'*/
+    implementation rootProject.ext.dependencies["multistateview"]
+    implementation rootProject.ext.dependencies["nucleus"]
+    implementation rootProject.ext.dependencies["nucleus-support-v7"]
+    implementation rootProject.ext.dependencies["nucleus-support-v4"]
+    implementation rootProject.ext.dependencies["ocpsoft-pretty-time"]
+    implementation rootProject.ext.dependencies["prefser"]
+    implementation rootProject.ext.dependencies["localify"]
+    implementation rootProject.ext.dependencies["icepick"]
+    implementation rootProject.ext.dependencies["eventbus"]
+    implementation rootProject.ext.dependencies["photoview-library"]
+
+    //    implementation 'com.zhy:percent-support-extends:1.0.6'
+
+    //    implementation 'com.github.ongakuer:PhotoDraweeView:1.1.3'
+
+    //    implementation 'com.facebook.fresco:fresco:0.13.0
+
+    //    implementation 'com.facebook.fresco:imagepipeline-okhttp:0.13.0'
+    implementation project(':shareutil')
+
+    //implementation rootProject.ext.dependencies["update-app"]
+
+    //bugly
+    implementation rootProject.ext.dependencies["bugly"]
+
+    // 指定tinker依赖版本（注：应用升级1.3.5版本起，不再内置tinker）
+    implementation 'com.tencent.tinker:tinker-android-lib:1.9.9'
+
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation rootProject.ext.dependencies["bugly-nativecrashreport"]
+
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    implementation rootProject.ext.dependencies["umeng-common"]
+
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    implementation rootProject.ext.dependencies["umeng-utdid"]
+
+    //PushSDK
+    implementation rootProject.ext.dependencies["umeng-push"]
+
+    //小米Push通道
+    implementation rootProject.ext.dependencies["umeng-xiaomi"]
+    implementation files('libs/jsoup-1.8.3.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+
+    //多渠道
+    implementation 'com.meituan.android.walle:library:1.1.3'
+    implementation project(':android-pdf')
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- <com.zhiyi.chinaipo.ui.widget.ad.CircleProgressView
+             android:id="@+id/time_progress"
+             android:layout_width="80dip"
+             android:layout_height="80dip"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             app:circleColor="#00bbccdd"
+             app:text="跳过"
+             app:circleProgressColor="@color/red"
+             app:textColor="@color/white"
+             app:textIsDisplayable="false"
+             app:roundWidth="2dip"
+             app:textSize="12sp"
+             android:visibility="gone"/>-->
+
+
+        <RelativeLayout
+            android:id="@+id/rl_ad_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/img_ipo">
+
+            <ImageView
+                android:id="@+id/ad_view"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--<ImageView-->
+                <!--android:id="@+id/img_ad"-->
+              <!---->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <TextView
+                android:id="@+id/time_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ad"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="跳转"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="广告"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

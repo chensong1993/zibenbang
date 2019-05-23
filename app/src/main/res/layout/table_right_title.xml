@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/merge_sales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_table_title_0"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center|right"
+        android:maxLines="2"
+        android:text="@string/dangqianjia"
+        android:textColor="@color/hui4"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_table_title_1"
+        style="@style/TextView_Table_Right"
+        android:text="@string/zhangdiefu" />
+
+    <TextView
+        android:id="@+id/tv_table_title_2"
+        style="@style/TextView_Table_Right"
+        android:text="@string/chengjiaoe" />
+
+    <TextView
+        android:id="@+id/tv_table_title_3"
+        style="@style/TextView_Table_Right"
+        android:text="@string/chengjiaoliang" />
+
+    <TextView
+        android:id="@+id/tv_table_title_4"
+        style="@style/TextView_Table_Right"
+        android:text="@string/dangdiefu" />
+
+    <TextView
+        android:id="@+id/tv_table_title_5"
+        style="@style/TextView_Table_Right"
+        android:text="@string/yingshou" />
+
+    <TextView
+        android:id="@+id/tv_table_title_6"
+        style="@style/TextView_Table_Right"
+        android:text="@string/jinglirun" />
+
+    <TextView
+        android:id="@+id/tv_table_title_7"
+        style="@style/TextView_Table_Right"
+        android:text="@string/liutongguben" />
+
+    <TextView
+        android:id="@+id/tv_table_title_8"
+        style="@style/TextView_Table_Right"
+        android:text="@string/liutongshizhi" />
+
+    <TextView
+        android:id="@+id/tv_table_title_9"
+        style="@style/TextView_Table_Right"
+        android:text="@string/zongguben" />
+
+    <TextView
+        android:id="@+id/tv_table_title_10"
+        style="@style/TextView_Table_Right"
+        android:text="@string/zongshizhi" />
+
+    <TextView
+        android:id="@+id/tv_table_title_11"
+        style="@style/TextView_Table_Right"
+        android:text="@string/yinglilv" />
+
+    <TextView
+        android:id="@+id/tv_table_title_12"
+        style="@style/TextView_Table_Right"
+        android:text="@string/meigushouyi" />
+
+    <TextView
+        android:id="@+id/tv_table_title_13"
+        style="@style/TextView_Table_Right"
+        android:text="@string/zuigaojia" />
+
+    <TextView
+        android:id="@+id/tv_table_title_14"
+        style="@style/TextView_Table_Right"
+        android:text="@string/zuidijia" />
+
+    <TextView
+        android:id="@+id/tv_table_title_15"
+        style="@style/TextView_Table_Right"
+        android:text="@string/junjia" />
+
+    <TextView
+        android:id="@+id/tv_table_title_16"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right|center"
+        android:maxLines="2"
+        android:text="@string/zhenfu"
+        android:textColor="@color/hui4"
+        android:textSize="12dp" />
+
+</LinearLayout>

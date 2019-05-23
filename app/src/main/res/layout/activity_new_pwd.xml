@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <!--  <ImageView
+          android:id="@+id/img_off"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="40px"
+          android:layout_marginTop="40px"
+          android:background="@mipmap/ic_off" />
+  -->
+    <RelativeLayout
+        android:id="@+id/rl_xinsanban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp">
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="52dp"
+            android:background="@mipmap/ic_icon_blue_ipo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_xinsanban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/x_new_pwd"
+            android:textColor="@color/hui2"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zhaohui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pwd"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_created_pwd"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <EditText
+            android:id="@+id/et_querenpwd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/et_pwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_confirm_ped"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <TextView
+            android:id="@+id/tv_tijiao"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/et_querenpwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/bluer"
+            android:gravity="center"
+            android:text="@string/x_submit"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_quxiao"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/tv_tijiao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog"
+            android:gravity="center"
+            android:text="@string/x_cancel"
+            android:textColor="@color/hui2"
+            android:textSize="17dp" />
+    </RelativeLayout>
+</RelativeLayout>

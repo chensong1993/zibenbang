@@ -1,0 +1,474 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_reload"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center_horizontal"
+                android:text="点击重新加载"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_f10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_gengduo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_zhangfubang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/x_gengduo_shuju"
+                        android:textColor="@color/blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_keyboard_arrow_right_black_36dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/hui6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space"
+                        android:text="@string/f10_lirunbiao"
+                        android:textColor="@color/blue"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_lirun_nianbao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <!-- <TextView
+                         android:layout_width="240px"
+                         android:layout_height="55px"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center_vertical|right"
+                         android:text="2017年报"
+                         android:textColor="@color/black"
+                         android:textSize="24px"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:layout_width="240px"
+                         android:layout_height="55px"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center_vertical|right"
+                         android:text="2016中报"
+                         android:textColor="@color/black"
+                         android:textSize="24px"
+                         android:textStyle="bold" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_mei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fmeigushouyi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fmeigushouyitanbao" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fyingyeshouru" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fyingshoutongbi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjinglirun" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjingliruntongbi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjinglirunkoufei" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjinglirunkoufeitongbi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_f10_lirun_biao_this_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/hui6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space"
+                        android:text="@string/f10_zichan_fuzhai"
+                        android:textColor="@color/blue"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_zichan_nianbao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <!--<TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="240px"
+                        android:layout_height="55px"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical|right"
+                        android:text="2017年报"
+                        android:textColor="@color/black"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="240px"
+                        android:layout_height="55px"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical|right"
+                        android:text="2016中报"
+                        android:textColor="@color/black"
+                        android:textSize="24px"
+                        android:textStyle="bold" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_xianjin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fmeigujingzichan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjingzichanshouyi" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fliudongzichan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Ffeiliutongzichan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fzichanzhongji"
+                            android:textColor="@color/blue" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fliudongfuzhai" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Ffeiliudongfuzhai" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Ffuzhaiheji"
+                            android:textColor="@color/blue" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fweifenpeilirun" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fzibenzongji" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fgudongliyiheji"
+                            android:textColor="@color/blue" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_f10_zichan_fuzhai_biao_this_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/hui6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space"
+                        android:text="@string/f10_xianjin_liuliang"
+                        android:textColor="@color/blue"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_xianjin_nianbao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <!-- <TextView
+                         android:layout_width="240px"
+                         android:layout_height="55px"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center_vertical|right"
+                         android:text="2017年报"
+                         android:textColor="@color/black"
+                         android:textSize="24px"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:layout_width="240px"
+                         android:layout_height="55px"
+                         android:layout_gravity="center_vertical"
+                         android:gravity="center_vertical|right"
+                         android:text="2016年报"
+                         android:textColor="@color/black"
+                         android:textSize="24px"
+                         android:textStyle="bold" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tv_xianjin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fmeiguxianjinliujinge" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fjingyingxianjin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Ftouzixianjin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                        <TextView
+                            style="@style/f10_left_content"
+                            android:text="@string/Fchouzixianjin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/hui" />
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_f10_xianjin_liuliang_biao_this_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

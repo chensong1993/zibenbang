@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_reload"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center_horizontal"
+                android:text="点击重新加载"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_ziliao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/tv_z"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/hui6"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space"
+                android:text="@string/x_zhongda_shijian"
+                android:textColor="@color/blue"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/zhongda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_shijian1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/Zzengfatishi"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <!-- <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/hui" />-->
+
+                    <TextView
+                        android:id="@+id/tv_shijian2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/Zzuoshitishi"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <!--  <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/hui" />-->
+
+                    <TextView
+                        android:id="@+id/tv_shijian3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/Zbaobiaopilou"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_shijian4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/Zfenhonhpeisong"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_zhongdashijian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_g"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/hui6"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space"
+                android:text="@string/x_gongsi_gaikuo"
+                android:textColor="@color/blue"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_gongsigaikuo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/gongsi" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_gl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/hui6"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space"
+                android:text="@string/x_guanliceng"
+                android:textColor="@color/blue"
+                android:textSize="14dp">
+
+            </TextView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_guanliceng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

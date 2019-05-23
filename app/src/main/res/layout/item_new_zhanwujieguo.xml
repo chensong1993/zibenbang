@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui6">
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="网络不可用，请检测您的网络链接"
+        android:textColor="@color/hui2" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_author"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/dialog"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="@color/hui2" />
+</RelativeLayout>

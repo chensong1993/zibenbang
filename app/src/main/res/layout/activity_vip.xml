@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hui6"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/item_activity_head_vip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_true_name"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_toLeftOf="@id/img_icon_nicheng"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_qiye"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_qiye"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_qiye_name"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_qiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_qiyewei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/img_icon_qiye"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="100dp"
+                android:maxLines="1"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bumen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_department"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_bumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_bumenwei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/img_icon_bumen"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="100dp"
+                android:maxLines="1"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_phone_number"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_phonewei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/img_icon_phone"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="100dp"
+                android:maxLines="1"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_email"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_emailwei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/img_icon_email"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="100dp"
+                android:maxLines="1"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_leibie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_category"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_leibie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <EditText
+                android:id="@+id/tv_leibiewei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/img_icon_leibie"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="100dp"
+                android:maxLines="1"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_guanzhu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_follow_territory"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <TextView
+                android:id="@+id/tv_guanzhuwei"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/img_icon_guanzhu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_diqu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space"
+                android:text="@string/x_diqu"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/img_icon_diqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:backgroundTint="@color/hui2" />
+
+            <TextView
+                android:id="@+id/tv_diquwei"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@id/img_icon_diqu"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/weitianxie"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/tv_vip_baocun"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/x_save"
+            android:textColor="@color/blue"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

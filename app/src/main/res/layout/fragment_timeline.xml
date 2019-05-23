@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.linkaas.common.stockchart.InteractiveTimeLineLayout
+            android:id="@+id/timeLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timeLineLayout"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/hui6"
+                android:gravity="center"
+                android:text="@string/x_wudang"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--卖5-->
+                <LinearLayout
+                    android:id="@+id/ll_mai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_sell_5"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_sell_4"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_sell_3"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_sell_2"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_sell_1"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_buy_1"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_buy_2"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_buy_3"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_buy_4"
+                        android:textSize="8dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center"
+                        android:text="@string/x_buy_5"
+                        android:textSize="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rl_wudang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ll_mai" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hui" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rl_wudang1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_wudang"
+                        android:layout_toRightOf="@id/ll_mai" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

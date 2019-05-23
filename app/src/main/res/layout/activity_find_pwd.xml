@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:id="@+id/img_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_off" />
+
+    <RelativeLayout
+        android:id="@+id/rl_xinsanban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_icon_blue_ipo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_xinsanban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/find_forget_pwd"
+            android:textColor="@color/hui2"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zhaohui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pwd">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/find_phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/hui2" />
+
+        <ImageView
+            android:id="@+id/img_phone_off"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/ic_minoff"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuxing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_yanzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog"
+                    android:hint="@string/find_yanzhengma"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="@color/hui2" />
+
+                <ImageView
+                    android:id="@+id/img_yanzheng_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_minoff" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/img_tuxing"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/et_yanzheng"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_duanxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_tuxing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rv_duanxin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_duanxin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/dialog"
+                    android:hint="@string/find_duanxin"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/hui2" />
+
+                <ImageView
+                    android:id="@+id/img_sms_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_minoff" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/but_note"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="2"
+                android:background="@color/hui2"
+                android:hint="@string/find_huoqu"
+                android:textColor="@color/subscribe_item_selected_bg"
+                android:textColorHint="@color/subscribe_item_selected_bg" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_tijiao"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/ll_duanxin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/find_tijiao"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_quxiao"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/tv_tijiao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog"
+            android:gravity="center"
+            android:text="@string/find_quxiao"
+            android:textColor="@color/hui2"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_zhaohui"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp">
+
+        <TextView
+            android:id="@+id/tvyiyou"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/find_existing_account"
+            android:textColor="@color/hui1"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/find_register"
+            android:textColor="@color/hui1"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</RelativeLayout>

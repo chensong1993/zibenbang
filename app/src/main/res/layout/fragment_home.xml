@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- <android.support.design.widget.AppBarLayout
+         android:id="@+id/app"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:elevation="0dp">-->
+    <TextView
+        android:id="@+id/fillStatusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_seek"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_seek"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/ic_seek"
+                android:transitionName="search" />
+        </RelativeLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/xTablayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#ffffff"
+            android:paddingTop="3dp"
+            app:tl_indicator_bounce_enable="false"
+            app:tl_indicator_color="@color/blue"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_margin_top="2dp"
+            app:tl_indicator_width="25dp"
+            app:tl_tab_width="55dp"
+            app:tl_textSelectColor="@color/black"
+            app:tl_textUnselectColor="@color/hui5"
+            app:tl_textsize="15dp" />
+        <!--<com.androidkun.xtablayout.XTabLayout-->
+        <!--android:id="@+id/xTablayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--app:xTabDividerWidthWidthText="true"-->
+        <!--app:xTabIndicatorColor="@color/colorPrimary"-->
+        <!--app:xTabIndicatorHeight="4dp"-->
+        <!--app:xTabMode="scrollable"-->
+        <!--app:xTabSelectedTextColor="@color/black"-->
+        <!--app:xTabSelectedTextSize="15dp"-->
+        <!--app:xTabTextColor="@color/hui1"-->
+        <!--app:xTabTextSelectedBold="true"-->
+        <!--app:xTabTextSize="15dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/ic_add" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/hui" />-->
+    <!-- </android.support.design.widget.AppBarLayout>-->
+    <TextView
+        android:id="@+id/tv_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="点击刷新页面"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>

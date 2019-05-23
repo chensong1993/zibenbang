@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_activity_head" />
+
+    <com.zhiyi.chinaipo.ui.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhiyi.chinaipo.ui.widget.circleView.CircleImageView
+                android:id="@+id/img_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    tools:text="ipo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:text="@string/x_zhuanglan"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_zhuanti_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                tools:text="浙商创投合伙人、上海区域总经理，复旦大学哲学学士与上海交通大学传播学硕士，关注文化娱乐，TMT，智能硬件，企业级服务及消费升级等领域投资，部分投资案例：度周末、友加、我爱我家、米粒影业。" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/hui">
+
+                <TextView
+                    android:id="@+id/tv_bule"
+                    android:layout_width="2dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_zuijin_wenzhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_bule"
+                    android:gravity="center_vertical"
+                    android:text="@string/x_zuixin_wenzhang"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_zuijin_wenzhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+          <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/hui">
+
+                <TextView
+                    android:id="@+id/tv_bule1"
+                    android:layout_width="2dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_zuozhe1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_bule1"
+                    android:gravity="center_vertical"
+                    android:text="@string/x_xiangguang"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_xiangguan_wenzhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--<TextView
+                android:layout_width="200px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="40px"
+                android:background="@drawable/go"
+                android:gravity="center"
+                android:text="浏览更多"
+                android:textColor="@color/blue" />-->
+        </LinearLayout>
+    </com.zhiyi.chinaipo.ui.widget.MyScrollView>
+</LinearLayout>

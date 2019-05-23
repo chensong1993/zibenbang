@@ -1,0 +1,385 @@
+<resources>
+    <string name="app_name">资本邦</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--频道定制-->
+    <string name="column_manage">栏目管理</string>
+    <string name="subscribe_my_column">我的频道</string>
+    <string name="subscribe_more_column">频道推荐</string>
+    <string name="subscribe_info">长按删除拖动排序,点击进入所选频道</string>
+    <string name="subscribe_manager_done">完成</string>
+
+    <!--友盟推送-->
+    <string name="push_add_success">添加成功！</string>
+    <string name="push_add_fail">添加失败！</string>
+    <string name="push_delete_success">删除成功！</string>
+    <string name="push_delete_fail">删除失败！</string>
+    <string name="push_get_tags">展示所有标签</string>
+    <string name="push_tag">标签为：</string>
+    <string name="push_tag_value">权值为：</string>
+    <string name="push_device_check">系统检查</string>
+    <string name="push_system_notification_switch">系统通知开关是否打开：</string>
+    <string name="push_cpu_info">CPU：</string>
+    <string name="push_os_version">Android版本：</string>
+    <string name="facebook_app_id">1266254913438718</string>
+
+    <!--新闻首页挂牌公司-->
+    <string name="home_guapaishuliang">挂牌数量</string>
+    <string name="zonggu">总股本</string>
+    <string name="liutonggu">流通股本</string>
+    <string name="chengjiaogushu">成交股数</string>
+    <string name="chengjiaojine">成交金额</string>
+    <string name="sanbanzuoshi">三板做市</string>
+
+    <!--行情统计-->
+    <string name="Dguben">股本:</string>
+    <string name="Dzongzichuan">总资产:</string>
+    <string name="Dyingshou">营收:</string>
+    <string name="Dyinghsoutongbi">营收同比增长:</string>
+    <string name="Djinglirun">净利润:</string>
+    <string name="Djingliruntongbi">净利润同比增长:</string>
+
+    <!--新股挂牌头部-->
+    <string name="gupiaomingcheng">股票名称</string>
+    <string name="guapairiqi">挂牌日期</string>
+    <string name="zhuanrangfangshi">转让方式</string>
+    <string name="zhuceziben">注册资本</string>
+
+    <!--table头不名称-->
+    <string name="dangqianjia">当前价</string>
+    <string name="zhangdiefu">涨跌幅</string>
+    <string name="chengjiaoe">成交额</string>
+    <string name="chengjiaoliang">成交量</string>
+    <string name="dangdiefu">涨跌额</string>
+    <string name="yingshou">营收</string>
+    <string name="jinglirun">净利润</string>
+    <string name="liutongguben">流通股本</string>
+    <string name="liutongshizhi">流通市值</string>
+    <string name="zongguben">总股本</string>
+    <string name="zongshizhi">总市值</string>
+    <string name="yinglilv">市盈率</string>
+    <string name="meigushouyi">每股收益</string>
+    <string name="zuigaojia">最高价</string>
+    <string name="zuidijia">最低价</string>
+    <string name="junjia">均价</string>
+    <string name="zhenfu">振幅</string>
+
+    <!--TableParticularsActivity顶部的值-->
+    <string name="Tjinkai">今开</string>
+    <string name="Tzuigaojia">最高价</string>
+    <string name="Tchengjiaoe">成交额</string>
+    <string name="Tzuoshou">昨收</string>
+    <string name="Tzuidijia">最低价</string>
+    <string name="Tchengjiaoliang">成交量</string>
+    <string name="Tyingshou">涨跌额</string>
+    <string name="Tliutonggu">流通股</string>
+    <string name="Tzongguben">总股本</string>
+    <string name="Tjinglilv">涨跌幅</string>
+    <string name="Tliuzhi">流值</string>
+    <string name="Tzongshizhi">总市值</string>
+    <string name="Tshiyingjing">市盈(静):</string>
+    <string name="Tshiyingdong">市盈(动):</string>
+    <string name="Tzhenfu">振幅</string>
+
+    <!--F10 利润表-->
+    <string name="Fmeigushouyi">每股收益</string>
+    <string name="Fmeigushouyitanbao">每股收益(摊薄)</string>
+    <string name="Fyingyeshouru">营业收入</string>
+    <string name="Fyingshoutongbi">营收同比增长率</string>
+    <string name="Fjinglirun">净利润</string>
+    <string name="Fjingliruntongbi">净利润同比增长率</string>
+    <string name="Fjinglirunkoufei">净利润(扣非)</string>
+    <string name="Fjinglirunkoufeitongbi">净利润(扣非)同比增长率</string>
+    <!--F10 资产负债表-->
+    <string name="Fmeigujingzichan">每股净资产</string>
+    <string name="Fjingzichanshouyi">净资产收益率</string>
+    <string name="Fliudongzichan">流动资产</string>
+    <string name="Ffeiliutongzichan">非流动资产</string>
+    <string name="Fzichanzhongji">资产总计</string>
+    <string name="Fliudongfuzhai">流动负债</string>
+    <string name="Ffeiliudongfuzhai">非流动负债</string>
+    <string name="Ffuzhaiheji">负债合计</string>
+    <string name="Fweifenpeilirun">未分配利润</string>
+    <string name="Fzibenzongji">资本公积</string>
+    <string name="Fgudongliyiheji">股东权益合计</string>
+    <!--F10 现金流量表-->
+    <string name="Fmeiguxianjinliujinge">每股现金流净额</string>
+    <string name="Fjingyingxianjin">经营现金净额</string>
+    <string name="Ftouzixianjin">投资现金净额</string>
+    <string name="Fchouzixianjin">筹资现金流净额</string>
+    <!--资料 重大事件-->
+    <string name="Zzengfatishi">增发提示</string>
+    <string name="Zzuoshitishi">做事提示</string>
+    <string name="Zbaobiaopilou">报表披露</string>
+    <string name="Zfenhonhpeisong">分红配送</string>
+    <!--资料 公司概括-->
+    <string name="Zgongsimingcheng">公司名称</string>
+    <string name="Zchengliriqi">成立日期</string>
+    <string name="Zguapairiqi">挂牌日期</string>
+    <string name="Zzhuceziben">注册资本</string>
+    <string name="Zsuoshuhangye">所属行业</string>
+    <string name="Zzhuyingyewu">主营业务</string>
+    <string name="Zzhubanquanshang">主办券商</string>
+    <string name="Zzhuanrangfangshi">转让方式</string>
+    <string name="Zzuoshishang">做市商</string>
+    <string name="Zzuoshiqishiri">做事起始日</string>
+    <string name="Zlvshishiwusuo">律师事务所</string>
+    <string name="Zkuaijishiwusuo">会计师事务所</string>
+    <string name="Zfarendaibiao">法人代表</string>
+    <string name="Zdongshizhang">董事长</string>
+    <string name="Zdongmi">董秘</string>
+    <string name="Zdizhi">地址</string>
+    <string name="Zdianhua">电话</string>
+    <string name="Zchuanzhen">传真</string>
+    <string name="Zemail">邮件</string>
+    <string name="Zwangzhi">网址</string>
+    <string name="amend_new_pwd_setting">新密码设置：</string>
+    <string name="amend_created_pwd">创建密码</string>
+    <string name="amend_confirm_pwd">确认密码</string>
+    <string name="amend_login">登 录</string>
+    <string name="amend_cancel">取 消</string>
+    <string name="author">作者</string>
+    <string name="author_search_result">搜索结果</string>
+    <string name="f10_lirunbiao">利润表</string>
+    <string name="f10_zichan_fuzhai">资产负债表</string>
+    <string name="f10_xianjin_liuliang">现金流量表</string>
+    <string name="diqu_hangye_name">行业名称</string>
+    <string name="diqu_guapai_count">挂牌数量</string>
+    <string name="diqu_n_proportion">行业占比</string>
+    <string name="find_forget_pwd">忘记密码，请输入注册手机号码：</string>
+    <string name="find_tijiao">提 交</string>
+    <string name="find_quxiao">取 消</string>
+    <string name="find_existing_account">已有账号</string>
+    <string name="find_register">点击注册</string>
+    <string name="find_phone">手机号码</string>
+    <string name="find_yanzhengma">图形验证码</string>
+    <string name="find_duanxin">短信验证码</string>
+    <string name="find_huoqu">获取验证码</string>
+    <string name="x_search_zixun">搜索资讯</string>
+    <string name="x_search_quanbu">全部</string>
+    <string name="x_colum">频道定制</string>
+    <string name="x_colum_paixu">编辑</string>
+    <string name="x_colum_tip">点击进入频道</string>
+    <string name="x_colum_tip1">拖动可以排序</string>
+    <string name="x_kuaiji_paihang">会计事务排行</string>
+    <string name="x_kuaiji_count">服务数量</string>
+    <string name="x_login_phone_number">手机号/邮箱</string>
+    <string name="x_login_pwd">密码</string>
+    <string name="x_login">登 录</string>
+    <string name="x_login_forget_pwd">忘记密码</string>
+    <string name="x_register">点击注册</string>
+    <string name="x_login_zhanghao">社交账号登录</string>
+    <string name="x_lvshi_name">律师事务所名称</string>
+    <string name="x_fuwu_count">服务数量</string>
+    <string name="x_new_pwd">新密码设置</string>
+    <string name="x_created_pwd">创建密码</string>
+    <string name="x_confirm_ped">确认密码</string>
+    <string name="x_submit">提 交</string>
+    <string name="x_cancel">取 消</string>
+    <string name="x_icon">头像</string>
+    <string name="x_vip">VIP认证</string>
+    <string name="x_unverified">未认证</string>
+    <string name="x_user_name">用户名</string>
+    <string name="x_bukexiugai">(不可修改)</string>
+    <string name="x_nickname">昵称</string>
+    <string name="x_change_pwd">密码修改</string>
+    <string name="x_quit">退出</string>
+    <string name="x_save">保存</string>
+    <string name="x_old_pwd">旧密码</string>
+    <string name="x_s_old_pwd">输入旧密码</string>
+    <string name="x_new_pwds">新密码</string>
+    <string name="x_s_new_pwds">输入新密码</string>
+    <string name="x_once_more">再次输入密码</string>
+    <string name="x_ipo_register">资本邦在线注册,</string>
+    <string name="x_phone">手机号码</string>
+    <string name="x_nickname_bitian">昵称(选填)</string>
+    <string name="x_consent">点击注册既表示同意</string>
+    <string name="x_user_agreement">《用户协议》</string>
+    <string name="x_registers">注 册</string>
+    <string name="x_quanzhan_search">全站搜索</string>
+    <string name="x_search">搜索</string>
+    <string name="x_zixun">资讯</string>
+    <string name="x_hangqing">行情</string>
+    <string name="x_author">作者</string>
+    <string name="x_shequ_bangding">社区号绑定</string>
+    <string name="x_wechat">微信</string>
+    <string name="x_weibangding">未绑定</string>
+    <string name="x_sina">新浪微博</string>
+    <string name="x_clear_cache">清理缓存</string>
+    <string name="x_guanyu">关于我们</string>
+    <string name="x_shangwu">商务合作</string>
+    <string name="x_zhuanglan">专栏</string>
+    <string name="x_versions">当前版本:</string>
+    <string name="x_zuixin_wenzhang">最新文章</string>
+    <string name="x_xiangguang">相关文章</string>
+    <string name="x_zongbiaoti">总标题</string>
+    <string name="x_true_name">真实姓名</string>
+    <string name="x_weitianxie">未填写</string>
+    <string name="x_qiye_name">企业名称</string>
+    <string name="x_department">部门</string>
+    <string name="x_phone_number">手机号</string>
+    <string name="x_email">邮箱</string>
+    <string name="x_category">类别</string>
+    <string name="x_follow_territory">关注领域</string>
+    <string name="x_diqu">地区</string>
+    <string name="x_shuru_content">输入内容</string>
+    <string name="x_yanbao">研报</string>
+    <string name="x_quanshang_name">券商名称</string>
+    <string name="x_zhuban_count">主办数量</string>
+    <string name="x_zixuan_setting">自选股设置</string>
+    <string name="x_finish">完成</string>
+    <string name="x_zuoshi_name">做市商名称</string>
+    <string name="x_zuoshi_count">做市数量</string>
+    <string name="x_gengduo_shuju">更多财务数据</string>
+    <string name="x_gubengudong">股本股东</string>
+    <string name="x_zongguben">总股本</string>
+    <string name="x_gudong_hushu">股东户数</string>
+    <string name="x_shida_gudong">十大股东</string>
+    <string name="x_zhangfubang">涨幅榜排行</string>
+    <string name="x_gupiao_name">股票名称</string>
+    <string name="x_setting">设置</string>
+    <string name="x_dianji_login">点击登录</string>
+    <string name="x_dianjiwanshan">点击完善个人信息</string>
+    <string name="x_zixuangu">自选股</string>
+    <string name="x_bianji">编辑</string>
+    <string name="x_guapaigongsi">挂牌公司</string>
+    <string name="x_jiezhiriqi">截止日期:</string>
+    <string name="x_gongsi_diqu_fenbu">挂牌公司地区分布</string>
+    <string name="x_gongsi_hangye_fenbu">挂牌公司行业分布</string>
+    <string name="x_guapai_gongsi">挂牌公司</string>
+    <string name="x_hangye_tongji">行业统计</string>
+    <string name="x_wudang">五档</string>
+    <string name="x_sell_5">卖5</string>
+    <string name="x_sell_4">卖4</string>
+    <string name="x_sell_3">卖3</string>
+    <string name="x_sell_2">卖2</string>
+    <string name="x_sell_1">卖1</string>
+    <string name="x_buy_1">买1</string>
+    <string name="x_buy_2">买2</string>
+    <string name="x_buy_3">买3</string>
+    <string name="x_buy_4">买4</string>
+    <string name="x_buy_5">买5</string>
+    <string name="x_zhongda_shijian">重大事件</string>
+    <string name="x_gongsi_gaikuo">公司概括</string>
+    <string name="x_guanliceng">管理层</string>
+    <string name="x_xinsanban">新三板在线</string>
+    <string name="log_out">确定退出登录</string>
+    <string name="x_confirm">确定</string>
+    <string name="x_chengjiaoe_paihang">成交额排行榜</string>
+    <string name="x_chengjiaoliang_paihang">成交量排行榜</string>
+    <string name="pengyouquan">朋友圈</string>
+    <string name="wechat_friend">微信朋友</string>
+    <string name="sina">新浪微博</string>
+    <string name="qq_friend">QQ好友</string>
+    <string name="qq_z">QQ空间</string>
+    <string name="x_xingu_guapai">新股挂牌(新三板)</string>
+    <string name="x_jingxuan_news">精选新闻</string>
+    <string name="x_jigoutouzi">机构投资者</string>
+    <string name="x_gerentouzi">个人投资者</string>
+    <string name="x_quanshang">券商</string>
+    <string name="x_qita">其他</string>
+    <string name="fenxaingdao">分享到</string>
+    <string name="geograhica_names">地区名称</string>
+    <string name="hangye_name">行业名称</string>
+    <string name="qita">其他</string>
+    <string name="zhubanquanshang_paihang">主办券商排行</string>
+    <string name="zuoshishang_paihang">做市商排行</string>
+    <string name="lvshishiwusuo_paihang">律师事务所排行</string>
+    <string name="nickname_modification">昵称修改</string>
+    <string name="follow_territory">关注领域</string>
+    <string name="personal_center">个人中心</string>
+    <string name="start_serach">开始搜索</string>
+    <string name="x_search_hangqing">搜索行情</string>
+    <string name="x_search_author">搜索作者</string>
+    <string name="search_quanbu">搜索全部</string>
+    <string name="no_search_results">暂无搜索结果</string>
+    <string name="innovation_layer">创新层</string>
+    <string name="base_layer">基础层</string>
+    <string name="data_detail">数据详情</string>
+    <string name="press_the_exit_again">再按一次退出程序</string>
+    <string name="new_version">检测到新版本!</string>
+    <string name="update_immediately">马上更新</string>
+    <string name="qitadiqu">其他地区</string>
+    <string name="data_centre">数据中心</string>
+    <string name="sanban_chengzhi">三板成指</string>
+    <string name="sanban_zuoshi">三板做市</string>
+    <string name="x_data">数据</string>
+    <string name="x_zixuan">自选</string>
+    <string name="weitianxie">未填写</string>
+    <string name="x_brand">品牌</string>
+
+    <!--分时一列的-->
+    <string-array name="data_xinguguapia">
+        <item>本月</item>
+        <item>本周</item>
+        <item>当天</item>
+    </string-array>
+    <!--分时一列的-->
+    <string-array name="k_line">
+        <item>分时</item>
+        <item>日线</item>
+        <item>周线</item>
+        <item>月线</item>
+    </string-array>
+
+    <!--公告一列的tab-->
+    <string-array name="gonggao">
+        <item>公告</item>
+        <item>资讯</item>
+        <item>资料</item>
+        <item>股东</item>
+        <item>F10</item>
+    </string-array>
+
+    <!--table-->
+    <string-array name="tables">
+        <item>全部</item>
+        <item>创新</item>
+        <item>基础</item>
+        <item>做市</item>
+        <item>竞价</item>
+        <item>转板</item>
+    </string-array>
+    <integer-array name="tables_icon">
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_add</item>
+    </integer-array>
+
+
+    <!--可滑动的tab头-->
+    <string-array name="table">
+        <item>当前价</item>
+        <item>涨跌幅</item>
+        <item>成交额</item>
+        <item>成交量</item>
+        <item>涨跌额</item>
+        <item>营收</item>
+        <item>净利润</item>
+        <item>流通股本</item>
+        <item>流通市值</item>
+        <item>总股本</item>
+        <item>总市值</item>
+        <item>市盈率</item>
+        <item>每股收益</item>
+        <item>最高价</item>
+        <item>最低价</item>
+        <item>均价</item>
+        <item>振幅</item>
+    </string-array>
+    <string-array name="news">
+        <item>创新层</item>
+        <item>转板公司</item>
+        <item>新股挂牌</item>
+        <item>行业统计</item>
+        <item>主办劵商</item>
+        <item>做市商</item>
+        <item>律师事务所</item>
+        <item>会计事务所</item>
+    </string-array>
+
+
+</resources>

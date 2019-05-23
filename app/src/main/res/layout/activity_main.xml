@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_sx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.zhiyi.chinaipo.ui.widget.navigation.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:selectedBackgroundVisible="false" />
+
+    <TextView
+        android:id="@+id/tv_xian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/bottom_navigation"
+        android:background="@color/hui" />
+
+    <com.zhiyi.chinaipo.ui.widget.navigation.BottomNavigationViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_xian" />
+
+    <LinearLayout
+        android:id="@+id/ll_dow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical" />
+</RelativeLayout>

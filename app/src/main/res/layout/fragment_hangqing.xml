@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fillStatusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+    <!--顶部-->
+    <include layout="@layout/shujutop" />
+
+    <include
+        layout="@layout/item_loading"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:srlEnableLoadmore="false"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/view_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_scrollFlags="scroll">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_sanbanzuoshi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_sanbanchengzhi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rv_sanbanzuoshi"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/tab_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    app:tl_indicator_bounce_enable="false"
+                    app:tl_indicator_color="@color/blue"
+                    app:tl_indicator_height="3dp"
+                    app:tl_textsize="15dp"
+                    app:tl_indicator_width="25dp"
+                    app:tl_textSelectColor="@color/blue"
+                    app:tl_textUnselectColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hui" />
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_hangqing_zhangfu_title" />
+                    <!--涨跌幅-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_zhangfu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <include layout="@layout/item_hangqing_chengjiaoe_title" />
+                    <!--成交额-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_chengjiaoe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <include layout="@layout/item_hangqing_chengjiaoliang_title" />
+                    <!--成交量-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_chengjiaoliang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/img_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@mipmap/ic_off" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/x_ipo_register"
+            android:textColor="@color/hui2"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_denglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_wu"
+            android:text="@string/find_existing_account"
+            android:textColor="@color/blue"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dengluzhuce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_wu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <ImageView
+            android:id="@+id/img_phone_off"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/ic_minoff"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuxing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_phone"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_yanzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog"
+                    android:hint="@string/find_yanzhengma"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space"
+                    android:textColorHint="@color/hui2" />
+
+                <ImageView
+                    android:id="@+id/img_yanzheng_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_minoff" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/img_tuxing"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_duanxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_tuxing"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/but_note"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_duanxin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog"
+                    android:hint="@string/find_duanxin"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space"
+                    android:textColorHint="@color/hui2" />
+
+                <ImageView
+                    android:id="@+id/img_duanxin_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_minoff" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/but_note"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@id/et_yanzheng"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/et_yanzheng"
+                android:layout_weight="2"
+                android:background="@color/hui2"
+                android:hint="@string/find_huoqu"
+                android:textColor="@color/subscribe_item_selected_bg"
+                android:textColorHint="@color/subscribe_item_selected_bg"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_duanxin"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_nickname_bitian"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <ImageView
+            android:id="@+id/img_name_off"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_duanxin"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_minoff"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_name"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_created_pwd"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <ImageView
+            android:id="@+id/img_pwd_off"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_minoff"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_affirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/et_pwd"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog"
+            android:hint="@string/x_confirm_ped"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/space"
+            android:textColorHint="@color/hui2" />
+
+        <ImageView
+            android:id="@+id/img_newpwd_off"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_pwd"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_minoff"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_xieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_affirm_pwd"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="12dp"
+            android:paddingTop="24px">
+
+            <TextView
+                android:id="@+id/tv_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/x_consent"
+                android:textColor="@color/hui2"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_xieyishu"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/tv_xieyi"
+                android:gravity="center_vertical"
+                android:text="@string/x_user_agreement"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_xieyi"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/x_registers"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+</RelativeLayout>

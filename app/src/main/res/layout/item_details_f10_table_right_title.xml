@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/merge_sales"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_table_title_0"
+        style="@style/Nianbao_or_Content_Right_f10"
+        android:paddingRight="10dp"
+        tools:text="2017年报"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

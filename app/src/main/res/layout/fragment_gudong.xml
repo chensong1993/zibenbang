@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_reload"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center_horizontal"
+                android:text="点击重新加载"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_gudong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/hui6"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/space"
+                    android:text="@string/x_gubengudong"
+                    android:textColor="@color/blue"
+                    android:textSize="14dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/gudong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_shijian1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/space"
+                            android:gravity="center_vertical"
+                            android:text="@string/x_zongguben"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_shijian2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/space"
+                            android:gravity="center_vertical"
+                            android:text="@string/liutongguben"
+
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_shijian3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/space"
+                            android:gravity="center_vertical"
+                            android:text="@string/x_gudong_hushu"
+
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_gubengudong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/gudong"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/hui6">
+
+                    <TextView
+                        android:id="@+id/tv_shi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:gravity="center_vertical"
+                        android:text="@string/x_shida_gudong"
+                        android:textColor="@color/blue"
+                        android:textSize="14dp" />
+
+
+                    <!-- <TextView
+                         android:id="@+id/tv_leftkuohao"
+                         android:layout_width="wrap_content"
+                         android:layout_height="80px"
+                         android:layout_toRightOf="@id/tv_shi"
+                         android:background="@color/hui6"
+                         android:gravity="center_vertical"
+                         android:text="("
+                         android:textColor="@color/black"
+                         android:textSize="28px" />
+
+                     <TextView
+                         android:id="@+id/tv_time"
+                         android:layout_width="wrap_content"
+                         android:layout_height="80px"
+                         android:layout_toRightOf="@id/tv_leftkuohao"
+                         android:background="@color/hui6"
+                         android:gravity="center_vertical"
+                         android:text="2017-02-02"
+                         android:textColor="@color/black"
+                         android:textSize="28px" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="80px"
+                         android:layout_toRightOf="@id/tv_time"
+                         android:background="@color/hui6"
+                         android:gravity="center_vertical"
+                         android:text=")"
+                         android:textColor="@color/black"
+                         android:textSize="28px" />-->
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shidagudong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

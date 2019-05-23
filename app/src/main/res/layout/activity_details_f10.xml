@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="60dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/img_equity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space"
+                android:background="@drawable/ic_go_back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_title_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/img_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space"
+            android:background="@drawable/ic_seek" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 此部分是标题部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/hui6"
+                android:orientation="horizontal">
+                <!-- 左侧标题的父容器 -->
+
+                <TextView
+                    android:id="@+id/tv_table_title_left"
+                    android:layout_width="132dp"
+                    android:layout_height="80px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space"
+                    android:text="@string/f10_lirunbiao"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- 右侧标题的父容器可实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/title_horsv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_lirun_bao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/hui" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- 左侧内容的父容器 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lift_container_lirun"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <!-- 右侧内容的父容器 实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/content_horsv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/right_container_listview_lirun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+            </LinearLayout>
+
+
+            <!-- 此部分是标题部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/hui6"
+                android:orientation="horizontal">
+                <!-- 左侧标题的父容器 -->
+                <TextView
+                    android:id="@+id/tv_table_title_left1"
+                    android:layout_width="132dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space"
+                    android:text="@string/f10_zichan_fuzhai"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- 右侧标题的父容器可实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/title_horsv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_zichanfuzhai_bao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 左侧内容的父容器 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lift_container_zichan"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <!-- 右侧内容的父容器 实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/content_horsv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/right_container_listview_zichan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+            </LinearLayout>
+
+
+            <!-- 此部分是标题部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/hui6"
+                android:orientation="horizontal">
+
+                <!-- 左侧标题的父容器 -->
+                <TextView
+                    android:id="@+id/tv_table_title_left2"
+                    android:layout_width="132dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space"
+                    android:text="@string/f10_xianjin_liuliang"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- 右侧标题的父容器可实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/title_horsv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_xianjinliuliang_bao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 左侧内容的父容器 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_left_container_xianjin"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="none" />
+
+                <!-- 右侧内容的父容器 实现水平滚动 -->
+                <com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView
+                    android:id="@+id/content_horsv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/right_container_listview_xianjin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                </com.zhiyi.chinaipo.ui.widget.SyncHorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_column_detail_pic"
+        android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/item_main_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/iv_column_detail_pic">
+
+        <TextView
+            android:id="@+id/tv_column_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            tools:text="ipo" />
+
+        <TextView
+            android:id="@+id/tv_column_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/tv_column_detail_title"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:text="专栏"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <!--<TextView
+            android:id="@+id/tv_news_detail_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="24px"
+            android:paddingTop="12px"
+            tools:text="123"
+            android:textColor="@color/blue"
+            android:textSize="26px"  />
+-->
+        <TextView
+            android:id="@+id/tv_column_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/x_xinsanban"
+            android:textColor="@color/hui2"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

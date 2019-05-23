@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recycler_item_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rv_news_detail_pic"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_news_detail_pic"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_main_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@id/rv_news_detail_pic">
+
+        <TextView
+            android:id="@+id/tv_news_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            tools:text="证监会反馈：正积极研究三类股东适格性问题" />
+
+        <TextView
+            android:id="@+id/tv_news_detail_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="5dp"
+            android:textSize="12dp"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/tv_news_detail_author_name"
+            android:text="资本邦"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/hui2"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

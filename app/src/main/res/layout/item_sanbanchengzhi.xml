@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/hui3"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_bankuai"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_zuoshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_zuoshi"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/tv_jiage">
+
+            <TextView
+                android:id="@+id/tv_baifenbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_baifenbi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tv_baifenbi"
+                android:gravity="left"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

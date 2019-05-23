@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@color/color10">
+
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:text="自选中心"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/img_head_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="65dp"
+            android:layout_toLeftOf="@id/tv_head_setting"
+            android:background="@drawable/ic_seek"
+            android:backgroundTint="@color/blue"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_head_setting"
+            android:layout_width="40dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="@dimen/space"
+            android:background="@drawable/shezhi"
+            android:gravity="center"
+            android:text="@string/x_setting"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+
+</RelativeLayout>

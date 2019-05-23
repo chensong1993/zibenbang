@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_industry_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_industry_companies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="right|center"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/Dguben"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dzongzichuan"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+    </LinearLayout>
+    <!--营收-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_yingshou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dyingshou"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_incomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+
+        <TextView
+            android:id="@+id/tv_yingshouzeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Dyinghsoutongbi"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_income_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+    </LinearLayout>
+
+    <!--净利润-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_jinglirun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Djinglirun"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_jinglirunzeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/Djingliruntongbi"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_industry_profit_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:text="--"
+            android:textColor="@color/hui5"
+            android:textSize="11dp" />
+    </LinearLayout>
+</LinearLayout>

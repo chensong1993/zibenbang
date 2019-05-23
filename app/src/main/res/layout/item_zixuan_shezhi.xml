@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bantouming"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_gupiao"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/gupaihao"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_gupiao"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_up"
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:background="@drawable/ic_up"
+            android:textColor="@color/red" />
+
+        <ImageView
+            android:id="@+id/img_tuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_tuodong" />
+    </RelativeLayout>
+
+
+</LinearLayout>

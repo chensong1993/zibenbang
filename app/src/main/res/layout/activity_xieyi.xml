@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_back"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space"
+            android:background="@drawable/ic_go_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户协议"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui" />
+
+    <com.zhiyi.chinaipo.ui.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:textColor="@color/hui" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="欢迎您来到新三板在线。"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="请您仔细阅读以下条款，如果您对本协议的任何条款表示异议，您可以选择不进入新三板在线。当您注册成功后，无论是进入新三板在线，还是在新三板在线上发布任何内容，均意味着您（以下称为「用户」，包括但不限于浏览用户、个人作者、组织机构等）完全接受本协议项下的全部条款。"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="一、总则"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="如用户完成注册程序，即表示用户与新三板在线（包括且不限于网站、手机应用等多平台）就其所提供的服务达成协议，自愿接受本服务协议的所有内容。此后，用户不得以未阅读本服务协议内容为由进行任何形式的抗辩。用户注册成功后，新三板在线将给予每个用户一个用户帐号及对应的密码，该用户帐号和密码由用户自己负责保管；用户应当对以其用户帐号进行的所有活动和发表的全部内容承担法律责任。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="二、服务说明"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="1、新三板在线通过互联网为用户提供网络服务，包括在线及无线的相关业务。
+\n2、新三板在线在提供网络服务时，可能会对部分网络服务收取一定的费用，在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+\n3、新三板在线保留不经事先通知因维修、升级或其他原因暂停本服务任何部分的权利。
+\n4、新三板在线所提供的所有服务及以后将提供的服务都将受到本服务条款的约束。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="三、用户的注册义务"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="为了能使用本服务，您同意以下事项：依本服务注册提示提供您本人真实、正确、最新及完整的资料（以下简称“登记资料”）；随时更新登记资料，确保其有效性。若您提供任何错误、不实或不完整的资料或者新三板在线有理由怀疑资料为错误、不实或不完整的，新三板在线有权暂停或终止您的账号，并拒绝您现在和未来使用本服务之全部或任何部分。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="四、隐私保护"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="尊重用户个人隐私是新三板在线的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护条款》之规范。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="五、用户的账号、密码和安全性"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="1.您一旦注册成功成为用户，您将得到一个密码和账号。如果您未保管好自己的账号和密码而对您、新三板在线或第三方造成的损害，您将负全部责任。另外，每个用户都要对其账户中的所有活动和言论负全责。\n
+2.您可随时改变您的密码和图标，也可以结束旧的账户重开一个新账户。\n
+3.用户同意若发现任何非法使用用户账号或安全漏洞的情况，应该立即通告新三板在线。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="六、用户行为"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。用户承诺：
+\n1.发布信息或者利用新三板在线的服务时必须符合中国有关法规，不得在新三板在线的网页上或者利用新三板在线的服务制作、复制、发布、传播以下信息：
+\n(a)反对宪法所确定的基本原则的；
+\n(b)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+\n(c)损害国家荣誉和利益的；
+\n(d)煽动民族仇恨、民族歧视，破坏民族团结的；
+\n(e)破坏国家宗教政策，宣扬邪教和封建迷信的；
+\n(f)散布谣言，扰乱社会秩序，破坏社会稳定的；
+\n(g)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+\n(h)侮辱或者诽谤他人，侵害他人合法权益的；
+\n(i)含有法律、行政法规禁止的其他内容的。
+\n2.在新三板在线的网页上发布信息或者利用新三板在线的服务时还必须符合其他有关国家和地区的法律规定以及国际法的有关规定。
+\n3.不利用新三板在线的服务从事以下活动：
+\n(a)未经允许，进入计算机信息网络或者使用计算机信息网络资源的；
+\n(b)未经允许，对计算机信息网络功能进行删除、修改或者增加的；
+\n(c)未经允许，对进入计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、修改或者增加的；
+\n(d)故意制作、传播计算机病毒等破坏性程序的；
+\n(e)其他危害计算机信息网络安全的行为。
+\n4.不以任何方式干扰新三板在线的服务。
+\n5.遵守新三板在线的所有其他规定和程序。
+\n用户需对自己在使用新三板在线服务过程中的行为承担法律责任。用户理解，如果新三板在线发现其网站传输的信息明显属于上段第(1)条所列内容之一，依据中国法律，新三板在线有义务立即停止传输，保存有关记录，向国家有关机关报告，并且删除含有该内容的地址、目录或关闭服务器。若用户的行为不符合以上提到的服务条款，新三板在线将作出独立判断立即取消用户服务账号。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="七、内容的所有权"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="1、在本服务条款中，“本服务公开使用区域”系指一般公众可以使用的区域。
+\n2、您同意已就您于本服务公开使用区域及本服务其他任何公开使用区域张贴之内容，或包括照片、图形或影音资料等内容，授予新三板在线全球性、免许可费及非独家的使用权，新三板在线可以为了展示、散布及推广张贴前述内容之特定服务目的，将前述内容复制、修改、改写、改编或出版，在您将前述内容放入本服务期间，使用权持续有效；若您将前述内容自本服务中删除，则使用权于删除时终止。
+\n3、您同意已就您于本服务其他公开使用区域张贴的其他内容，授予新三板在线免许可费、永久有效、不可撤销、非独家及可完全再授权之权利在全球使用、复制、修改、改写、改编、发行、翻译、创造衍生性著作，或将前述内容（部分或全部）加以散布、展示，或放入利用任何现在已知和未来开发出之形式、媒体和科技之其他著作物当中。
+\n4、当您怀疑可能构成侵犯时，您可以向新三板在线指出。如果新三板在线上使用了没有得到您（您是相应内容的拥有者）的许可的内容，您可以联系我们并出示能够证明您的所有权的证明请求移除相应内容。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="八、信息的储存及限制"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="您同意关于本服务的使用新三板在线有权制订一般措施及限制，包含但不限于本服务将保留的电子邮件讯息、所张贴内容或其他上载内容之最长期间。通过本服务存储或传送之任何信息、通讯资料和其他内容，如被删除或未予储存，新三板在线毋须承担任何责任。您亦同意，长时间未使用的账号，新三板在线有权关闭。您也同意，新三板在线有权依其自行之考量，不论通知与否，随时变更这些一般措施及限制。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="九、结束服务"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="用户或新三板在线可随时根据实际情况中断服务。用户若反对任何服务条款的建议或对后来的条款修改有异议，或对新三板在线服务不满，用户只有以下的追索权：
+\n不再使用新三板在线服务。
+\n结束用户使用新三板在线服务的资格。
+\n通告新三板在线停止该用户的服务。
+\n结束用户服务后，用户使用新三板在线服务的权利马上中止。从那时起，新三板在线不再对用户承担任何义务。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十、免责声明"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="用户理解并接受：新三板在线不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性、安全性、出错发生都不作担保。
+\n用户理解并接受：下载或通过新三板在线产品服务取得的任何信息资料取决于用户自己，并由其承担系统受损或资料丢失的所有风险和责任。
+\n用户理解并接受：新三板在线不对其他用户所提供的内容的准确性、时效性或完整性作任何保证，对于因使用这些资料或无法使用这些资料而导致的任何损害，新三板在线无须承担法律责任。同时对于使用本网站链接的其他网站或网页而引起的任何损害，新三板在线不承担任何法律责任。
+\n用户理解并接受：用户以自己的独立判断从事于投资或理财的行为，并独立承担可能产生的风险与责任，新三板在线不承担任何法律责任。
+\n新三板在线对直接、间接、偶然、特殊及继起的损害不负责任，这些损害来自：不正当使用产品服务，在网上购买商品或类似服务，在网上进行交易，非法使用服务或用户传送的信息有所变动。
+\n新三板在线对所有用户自发组织的活动不负责任。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十一、赔偿"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="由于您通过本服务提供、张贴或传送之内容、您违反本服务条款、或您侵害他人任何权利因而衍生或导致任何第三人提出任何索赔或请求，新三板在线有权追究用户的法律责任，所造成的损失应由用户承担全部赔偿责任。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十二、禁止商业行为"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="您同意不对本服务任何部分或本服务之使用或获得，进行复制、拷贝、出售、转售或用于任何其他商业目的。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十三、服务的修改和终止"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="新三板在线将尽力提供最好的服务并在发生任何修改或者中断服务时及时通知用户，但是新三板在线保留以下权利：
+\n1、随时修改或中断服务而不需通知用户的权利。用户接受新三板在线行使修改或中断服务的权利，新三板在线不需对用户或第三方负责。
+\n2、在必要时修改服务条款而不需通知用户的权利。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十四、法律"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="用户和新三板在线一致同意有关服务条款以及使用新三板在线的服务产生的争议交由上海仲裁委员会解决。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="十五、其他"
+                    android:textColor="@color/black"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="服务条款最终解释权和修改权归新三板在线所有。"
+                    android:textColor="@color/black"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_tongyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="78px"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/xieyi"
+                    android:gravity="center"
+                    android:text="同意本协议"
+                    android:textColor="@color/blue"
+                    android:textSize="36px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zhiyi.chinaipo.ui.widget.MyScrollView>
+
+</LinearLayout>

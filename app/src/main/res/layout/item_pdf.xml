@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/item_main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_news_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginTop="14dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="5dp"
+                tools:text="111"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/tv_news_detail_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_detail_title"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:background="@drawable/pdf"
+                android:gravity="center"
+                android:text="PDF"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/red"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_detail_title"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_news_detail_author_name"
+                android:text=""
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

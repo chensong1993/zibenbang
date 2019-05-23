@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_activity_head_no_dian" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.zhiyi.chinaipo.ui.widget.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <!--<com.androidkun.xtablayout.XTabLayout-->
+                <!--android:id="@+id/X_xTablayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginLeft="100dp"-->
+                <!--android:layout_marginRight="100dp"-->
+                <!--android:layout_height="44dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--app:xTabIndicatorColor="@color/colorPrimary"-->
+                <!--app:xTabIndicatorHeight="4dp"-->
+                <!--app:xTabIndicatorWidth="25dp"-->
+                <!--app:xTabMode="fixed"-->
+                <!--app:xTabSelectedTextColor="@color/blue"-->
+                <!--app:xTabTextColor="@color/black"-->
+                <!--app:xTabTextSize="15dp" />-->
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/X_xTablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:background="#ffffff"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    app:tl_indicator_bounce_enable="false"
+                    app:tl_indicator_color="@color/blue"
+                    app:tl_indicator_height="3dp"
+                    app:tl_indicator_width="25dp"
+                    app:tl_textSelectColor="@color/blue"
+                    app:tl_textUnselectColor="@color/black"
+                    app:tl_textsize="15dp" />
+
+                <TextView
+                    android:id="@+id/separator_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hui" />
+
+                <include layout="@layout/item_xinguguapai_head" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_xinguguapai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </com.zhiyi.chinaipo.ui.widget.MyScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

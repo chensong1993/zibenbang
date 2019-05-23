@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item0"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:gravity="right|center"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        tools:text="--" />
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item1"
+        style="@style/TextView_Table_Right_f10"
+        tools:text="--" />
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item2"
+        style="@style/TextView_Table_Right_f10"
+        tools:text="--" />
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item3"
+        style="@style/TextView_Table_Right_f10"
+        tools:text="--" />
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item4"
+        style="@style/TextView_Table_Right_f10"
+        tools:text="--" />
+
+    <TextView
+        android:id="@+id/tv_table_content_right_item5"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        tools:text="--" />
+
+</LinearLayout>
